@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>example</title>
+  </head>
+  <body>
+    <p>短小精悍的前端缓存工具，防止内存泄漏 -- wind-cache</p>
+    <script src="../dist/bundle.js"></script>
+    <script>
+      var wc = window.windCache
+      var cache = new wc()
+      cache.set('name', '小明')
+      alert(cache.get('name'))
+    </script>
+  </body>
+</html>
