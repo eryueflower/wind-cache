@@ -8,6 +8,10 @@
 
 ## 安装下载
 
+- 下载地址 https://github.com/eryueflower/wind-cache/releases
+- npm i wind-cache
+- CDN https://unpkg.com/wind-cache/example/index.html
+
 ## 快速使用
 
 简单接入的文档

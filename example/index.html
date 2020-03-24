@@ -7,10 +7,10 @@
   </head>
   <body>
     <p>短小精悍的前端缓存工具，防止内存泄漏 -- wind-cache</p>
-    <script src="../dist/bundle.js"></script>
+    <script src="../release/bundle.js"></script>
     <script>
-      var wc = window.windCache
-      var cache = new wc()
+      var WC = window.windCache
+      var cache = new WC()
       cache.set('name', '小明')
       alert(cache.get('name'))
     </script>

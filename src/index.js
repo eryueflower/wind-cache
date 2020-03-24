@@ -11,6 +11,11 @@ class windCache {
   get(key) {
     return this.list[key]
   }
+
+  clear() {
+    this.list = {}
+    return true
+  }
 }
 window.windCache = windCache
 export default windCache

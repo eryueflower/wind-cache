@@ -18,3 +18,9 @@ cache.set('name', '小明')
 ```js
 cache.get('name')
 ```
+
+## 清楚缓存
+
+```js
+cache.clear()
+```

@@ -3,9 +3,12 @@
   "version": "0.0.1",
   "description": "短小精悍的前端缓存工具，防止内存泄漏",
   "main": "src/index.js",
+  "files": [
+    "release"
+  ],
   "scripts": {
     "test": "jest ./test",
-    "build": "webpack",
+    "release": "webpack",
     "serve": "webpack-dev-server --inline"
   },
   "repository": {
@@ -21,7 +24,9 @@
     "url": "https://github.com/eryueflower/wind-cache/issues"
   },
   "homepage": "https://github.com/eryueflower/wind-cache#readme",
-  "dependencies": {},
+  "dependencies": {
+    "user": "0.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.7.5",
     "@babel/plugin-transform-runtime": "^7.9.0",
