@@ -8,6 +8,7 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly'
   },
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module'
@@ -25,6 +26,9 @@ module.exports = {
     // 'no-tabs': [o],
     'guard-for-in': 0,
     // "max-len": ["error", { "code": 200 }],
-    'no-restricted-syntax': 0
+    'no-restricted-syntax': 0,
+    'no-return-assign': 0,
+    'no-unused-expressions': 0,
+    'consistent-return': 0
   }
 }

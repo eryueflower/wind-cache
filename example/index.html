@@ -7,12 +7,11 @@
   </head>
   <body>
     <p>短小精悍的前端缓存工具，防止内存泄漏 -- wind-cache</p>
-    <script src="../release/bundle.js"></script>
+    <script src="../dist/library.js"></script>
     <script>
-      var WC = window.windCache
-      var cache = new WC()
-      cache.set('name', '小明')
-      alert(cache.get('name'))
+      var cache = new winux.default(true)
+      cache.setStorageSync('name', '小红')
+      alert(cache.getStorageSync('name'))
     </script>
   </body>
 </html>
