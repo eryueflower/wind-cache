@@ -11,9 +11,6 @@ export default class WindCache {
         this.getWindux = localStorage.getItem.bind(localStorage, 'winux')
       }
       this.init()
-      // console.log('新建实例')
-    } else {
-      // console.log('缓存实例')
     }
     return WindCache.instance
   }
