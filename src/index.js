@@ -9,6 +9,7 @@ export default class WindCache {
         this.isLasting = true
         this.setWindux = localStorage.setItem.bind(localStorage, 'winux')
         this.getWindux = localStorage.getItem.bind(localStorage, 'winux')
+        this.list = this._FormatData('get')
       }
       this.init()
     }
@@ -74,6 +75,9 @@ export default class WindCache {
   getStorageSync = (isP) => {
     if (isP) {
       return (this.getStorageSync = (key, rep) => {
+        if (this.list[key]) {
+          return this.list[key]
+        }
         const data = this._FormatData('get')
         return data[key] || rep
       })

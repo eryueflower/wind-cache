@@ -9,7 +9,7 @@ export default {
   name: 'Home',
   created() {
     console.log(this.$winux)
-    this.$winux.setStorageSync('name', '小明')
+    this.$winux.setStorageSync('color', { one: 'red', two: 'blue' })
   }
 }
 </script>
