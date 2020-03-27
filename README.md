@@ -1,16 +1,26 @@
-# wind-cache
+# Wind Cache
 
-短小精悍的前端缓存工具，防止内存泄漏
+基于 `localStorage` 的缓存机制，提供可靠高性能的缓存，帮助构建高性能的 `webApp`。
+
+## 特性
+
+🚀 高性能。
+
+🍰 控制内存。
+
+🍷 丰富的 API。
+
+🌲 数据持久化。
 
 ## 简介
 
-短小精干，不必多说
+`Wind Cache` 和许多缓存库一样，通过 `Key-Value` 来缓存数据。
 
 ## 安装下载
 
 - 下载地址 https://github.com/eryueflower/wind-cache/releases
 - npm i wind-cache
-- CDN https://unpkg.com/wind-cache/example/index.html
+- CDN https://unpkg.com/wind-cache/dist/library.js
 
 ## 快速使用
 

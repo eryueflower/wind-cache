@@ -1,6 +1,5 @@
-import WC from '../src/index'
-var winux = new WC()
-
+import WindCache from '../src/index.js'
+let winux = new WindCache()
 test('同步设置缓存', () => {
   expect(winux.setStorageSync('name', '小明')).toBeTruthy()
 })

@@ -10,5 +10,19 @@
     <p>短小精悍的前端缓存工具，防止内存泄漏</p>
     <p style="margin-left: 400px;">-- wind-cache</p>
     <script src="library.js"></script>
+    <script>
+      var winux = new winux.default({
+        isLasting: true
+      })
+      winux.setStorageSync('name', '小红')
+      winux.setStorageSync('age', '19')
+      alert(winux.getStorageSync('name'))
+      winux.getStorage({
+        key: 'age',
+        success: function(res) {
+          console.log(res)
+        }
+      })
+    </script>
   </body>
 </html>

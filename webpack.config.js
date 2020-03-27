@@ -39,7 +39,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin() // 会默认清空 output.path 文件夹
     // new HtmlWebpackPlugin({
-    //   template: path.join(__dirname, 'src/index.html'),
+    //   template: path.join(__dirname, 'index.html'),
     //   filename: 'index.html'
     // })
   ]

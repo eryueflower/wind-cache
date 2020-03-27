@@ -5,7 +5,7 @@ export default class WindCache {
     this.list = {}
     if (!WindCache.instance) {
       WindCache.instance = this
-      if (Options) {
+      if (Options && Options.isLasting) {
         this.isLasting = true
         this.setWindux = localStorage.setItem.bind(localStorage, 'winux')
         this.getWindux = localStorage.getItem.bind(localStorage, 'winux')
@@ -53,7 +53,7 @@ export default class WindCache {
     setTimeout(cb, 0)
   }
 
-  updateContent(isP) {
+  updateContent = (isP) => {
     if (isP) {
       return (this.updateContent = (key, value) => {
         const data = this._FormatData('get')
@@ -74,7 +74,7 @@ export default class WindCache {
     })
   }
 
-  getStorageSync(isP) {
+  getStorageSync = (isP) => {
     if (isP) {
       return (this.getStorageSync = (key, rep) => {
         const data = this._FormatData('get')
@@ -84,10 +84,10 @@ export default class WindCache {
     return (this.getStorageSync = (key, rep) => this.list[key] || rep)
   }
 
-  getStorage(field) {
+  getStorage = (field) => {
     const cb = () => {
-      const { key, success } = field
-      const data = this.getStorageSync(key)
+      const { key, rep, success } = field
+      const data = this.getStorageSync(key, rep)
       success && data && success(data)
     }
     setTimeout(cb, 0)

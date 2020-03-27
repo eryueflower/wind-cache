@@ -9,9 +9,11 @@
     <p>短小精悍的前端缓存工具，防止内存泄漏 -- wind-cache</p>
     <script src="../dist/library.js"></script>
     <script>
-      var cache = new winux.default(true)
-      cache.setStorageSync('name', '小红')
-      alert(cache.getStorageSync('name'))
+      var winux = new winux.default({
+        isLasting: true
+      })
+      winux.setStorageSync('name', '小红')
+      alert(winux.getStorageSync('name'))
     </script>
   </body>
 </html>
