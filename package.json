@@ -1,6 +1,6 @@
 {
   "name": "wind-cache",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "短小精悍的前端缓存工具，防止内存泄漏",
   "main": "dist/library.js",
   "files": [
@@ -10,7 +10,8 @@
     "test": "jest ./test",
     "build": "webpack",
     "dev": "webpack-dev-server --inline",
-    "pub": "sh Li.sh"
+    "prepub": "npm run build",
+    "pub": "  sh Li.sh"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/eryueflower/wind-cache#readme",
   "dependencies": {
+    "core-js": "^3.6.4",
     "user": "0.0.0"
   },
   "devDependencies": {

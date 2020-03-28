@@ -16,7 +16,41 @@
       })
       winux.setStorageSync('name', '小红')
       winux.setStorageSync('age', '19')
-      alert(winux.getStorageSync('name'))
+      winux.setStorageSync('country', {
+        china: 8,
+        usa: 5
+      })
+      winux.setStorageSync(
+        'Animal',
+        {
+          dog: 4,
+          pig: 5
+        },
+        {
+          expires: 7
+        }
+      )
+      winux.setStorageSync('Fruits', 'Apple', {
+        expires: 1000 * 60 * 2
+      })
+      winux.setStorageSync(
+        'Fruits1',
+        {
+          Apple1: 2,
+          orange1: 31
+        },
+        {
+          expires: 10
+        }
+      )
+      winux.updateContent('Fruits', 'orange')
+      console.log(winux.getStorageSync('name'))
+      console.log(winux.getStorageSync('country'))
+      console.log(winux.getStorageSync('Animal'))
+      console.log(winux.getStorageSync('Fruits'))
+      console.log(winux.getStorageSync('Fruits1', 1234))
+      console.log(winux.getStorageSync('Fruits'))
+      console.log(winux.readAllStorage())
       winux.getStorage({
         key: 'age',
         success: function(res) {

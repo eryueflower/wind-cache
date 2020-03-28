@@ -44,6 +44,24 @@ winux.setStorageSync('name', '小明')
 winux.setStorage({ key: 'name', value: '小明' })
 ```
 
+#### 设置过期时间
+
+当设置的失效时间小于等于 30 天时，我们可以在 expires 属性后面直接输入 XX 天数
+
+```js
+winux.setStorageSync('name', '小明', {
+  expires: 7
+})
+```
+
+当设置的失效时间少于一天时：直接传一个时间戳.例如下面是设置 winux 的失效时间为 15 分钟
+
+```js
+winux.setStorageSync('name', '小明', {
+  expires: 1000 * 60 * 15
+})
+```
+
 ## 获取
 
 同步缓存

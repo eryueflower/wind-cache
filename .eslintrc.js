@@ -29,6 +29,7 @@ module.exports = {
     'no-restricted-syntax': 0,
     'no-return-assign': 0,
     'no-unused-expressions': 0,
-    'consistent-return': 0
+    'consistent-return': 0,
+    'no-param-reassign': 0
   }
 }
