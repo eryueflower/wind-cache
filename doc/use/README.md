@@ -25,7 +25,7 @@ WindCache(Options)
 #### 持久化
 
 ```js
-const winux = new ArrowCache({
+const winux = new WindCache({
   isLasting: true
 })
 ```
@@ -74,7 +74,7 @@ winux.getStorageSync('name')
 
 ```js
 winux.getStorage({
-  key: 'agnamee',
+  key: 'name',
   success: function(res) {
     console.log(res)
   }
@@ -88,10 +88,10 @@ winux.getStorage({
 ```js
 // 👎
 const doSomething = () => {
-  const foo = winux.getStorageSync('foo')
+  const foo = winux.getStorageSync('name')
 
   if (!foo) {
-    winux.setStorageSync('foo', 0)
+    winux.setStorageSync('name', 0)
   }
 
   // ...
@@ -99,7 +99,7 @@ const doSomething = () => {
 
 // 👍
 const doSomething = () => {
-  const foo = winux.getStorageSync('foo', 0)
+  const foo = winux.getStorageSync('name', 0)
 
   // ...
 }
