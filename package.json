@@ -1,6 +1,6 @@
 {
   "name": "wind-cache",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "短小精悍的前端缓存工具，防止内存泄漏",
   "main": "dist/library.js",
   "files": [

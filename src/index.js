@@ -184,7 +184,6 @@ export default class WindCache {
       const expireTime = expires <= stagnateTime
         ? oneDay * expires + startTime
         : expires + startTime
-      console.log('过期时间', new Date(expireTime))
       if (expireTime > nowTime()) {
         return value.value
       }

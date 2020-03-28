@@ -8,6 +8,7 @@ export default {
   name: 'About',
   created() {
     console.log(this.$winux.getStorageSync('color'))
+    console.log(this.$winux.getStorageSync('color1'))
   }
 }
 </script>

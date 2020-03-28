@@ -12,7 +12,7 @@
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
     "vuex": "^3.1.2",
-    "wind-cache": "0.0.8"
+    "wind-cache": "^0.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.2.0",
